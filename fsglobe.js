@@ -65,6 +65,7 @@ function FsGlobe() {
   });
   const mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
+  mesh.rotation.x = THREE.MathUtils.degToRad(30);
 
   material.map.needsUpdate = true;
 
